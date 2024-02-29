@@ -1,0 +1,69 @@
+.root {
+  .navbar {
+    padding: 40px 0;
+    border-bottom: 1px solid #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    .logotype {
+      gap: 1rem;
+      display: flex;
+      align-items: center;
+      outline: none;
+      .slogan {
+        h5 {
+          font-size: 24px;
+          font-weight: 800;
+          line-height: 29px;
+          text-transform: uppercase;
+        }
+        span {
+          color: #7b7b7b;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19px;
+        }
+      }
+    }
+    .cart {
+      padding: 13px 23px;
+      color: #ffffff;
+      background-color: #fe5f1e;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1.8rem;
+      transition: all 150ms ease;
+      position: relative;
+      &:hover {
+        background-color: darken(#fe5f1e, 12%);
+        span {
+          opacity: 0;
+        }
+        svg {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .divider {
+        width: 1px;
+        height: 20px;
+        margin: 0 12px;
+        background-color: rgba(#ffffff, 50%);
+      }
+      span {
+        opacity: 1;
+        transition: all 250ms ease-in-out;
+      }
+      svg {
+        right: 18px;
+        opacity: 0;
+        transform: translateX(-5px);
+        transition: all 250ms ease-in-out;
+        position: absolute;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.root {
+  row-gap: 20px;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  cursor: pointer;
+  .wrapper {
+    img {
+      transition: all 150ms ease-in-out;
+      &:hover {
+        transform: translateY(2.5px);
+      }
+    }
+    h4 {
+      margin: 8px 0;
+      font-size: 21px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: #7b7b7b;
+    }
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .price {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 27px;
+    }
+    .add {
+      gap: 6px;
+      padding: 10px 25px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 1.8rem;
+      color: #d15700;
+      background-color: #fff0e6;
+      transition: all 200ms ease;
+      &:hover {
+        background-color: darken(#fff0e6, 12%);
+      }
+    }
+  }
+}

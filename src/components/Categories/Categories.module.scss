@@ -1,0 +1,23 @@
+.root {
+  display: inline-flex;
+  .list {
+    gap: 0.5rem;
+    display: flex;
+    .item {
+      padding: 13px 28px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      border-radius: 1.3rem;
+      background-color: #f9f9f9;
+      transition: all 150ms ease;
+      &:hover {
+        background-color: darken(#f9f9f9, 3%);
+      }
+      &.selected {
+        color: #ffffff;
+        background-color: #282828;
+      }
+    }
+  }
+}

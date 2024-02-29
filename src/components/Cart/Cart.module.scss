@@ -1,0 +1,104 @@
+.root {
+  margin-top: 42px;
+  width: 820px;
+  height: 600px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  .head {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      gap: 8px;
+      display: flex;
+      align-items: center;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 39px;
+    }
+    .clear {
+      gap: 8px;
+      display: flex;
+      align-items: center;
+      color: #b6b6b6;
+      font-size: 18px;
+      font-weight: 300;
+      transition: all 150ms ease;
+      &:hover {
+        color: darken(#b6b6b6, 25%);
+      }
+    }
+  }
+  .body {
+    flex-grow: 1;
+    margin-bottom: 24px;
+    .list {
+      gap: 36px;
+      height: 448px;
+      padding-right: 28px;
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+    }
+  }
+  .foot {
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    .details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span {
+        font-size: 22px;
+        font-weight: 600;
+      }
+      .total {
+        b {
+          color: #fe5f1e;
+        }
+      }
+    }
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .back {
+        gap: 8px;
+        padding: 18px 32px;
+        display: flex;
+        align-items: center;
+        color: #b6b6b6;
+        font-size: 18px;
+        font-weight: 400;
+        border: 1px solid #d3d3d3;
+        border-radius: 30px;
+        transition: all 150ms ease;
+        &:hover {
+          color: darken(#d3d3d3, 25%);
+          border-color: darken(#d3d3d3, 25%);
+          .icon {
+            transform: translateX(-5px);
+            transition: all 150ms ease;
+          }
+        }
+      }
+      .pay {
+        padding: 18px 36px;
+        color: #ffffff;
+        background-color: #fe5f1e;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 30px;
+        transition: all 150ms ease;
+        &:hover {
+          background-color: darken(#fe5f1e, 13%);
+        }
+      }
+    }
+  }
+}

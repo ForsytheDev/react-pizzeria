@@ -1,0 +1,15 @@
+.root {
+  margin-bottom: 48px;
+  h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+  }
+  .list {
+    gap: 30px;
+    row-gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
